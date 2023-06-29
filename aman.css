@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+.left{
+
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background:white;
+}
+.right{
+    width: 60%;
+    height: 100%;
+    background:white
+}
+.right-top{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: royalblue;
+}
+.right-bottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(supratik-deshmukh-7xEWM4HfaLE-unsplash.jpg);
+    background-size: cover;
+   background-position:center;
+}
+.right-top{
+    width: 100%;
+    height: 50%;
+    background-image: url(istockphoto-1404492451-1024x1024.jpg);
+    background-size: cover;
+   background-position: center;
+}
+
+.lnav{
+    display: flex;
+    width: 100%;
+    margin: 4px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lnavr{
+    display: flex;
+    align-items: center;
+    
+
+}
+.lnavr a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 14px;
+    margin-left: 25px;
+}
+.lnavr i{
+    color: rgb(62, 119, 194);
+    margin-left: 25px
+}
+.text-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-center h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+.text-center p{
+    opacity: 6;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-center a{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+@media(max-width:500px) {
+    .main{
+        flex-direction: column;
+    }
+    
+    .main .left{
+        width: 100%;
+    }
+    .main .right{
+        width: 100%;
+    }
+}
